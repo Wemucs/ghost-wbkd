@@ -1,0 +1,8 @@
+{{! http://themes.ghost.org/docs/navigation }}
+<div class="taglist-wrapper clearfix">
+    <ul id="taglist" class="taglist">
+    {{#foreach navigation}}
+        <li><a href="{{url absolute="true"}}">{{label}}</a></li>
+    {{/foreach}}
+    </ul>
+</div>
