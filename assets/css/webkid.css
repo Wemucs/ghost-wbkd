@@ -101,7 +101,13 @@ body * {
   -o-box-sizing: border-box;
 }
 
-#articles, #article {
+#articles {
+  width: 67%;
+  margin-right: 3%;
+  float: left;
+}
+
+#article {
   width: 100%;
   margin-right: 3%;
   float: left;
