@@ -7,6 +7,10 @@
 <main id="content" class="content clearfix" role="main">
 
     <div id="articles">
+        {{#tag}}
+            <h1>{{name}}</h1>
+            <p>{{description}}</p>
+        {{/tag}}
         {{! The tag below includes the post loop - partials/loop.hbs }}
         {{> "loop"}}
     </div>
