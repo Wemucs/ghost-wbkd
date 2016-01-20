@@ -5,8 +5,6 @@ $(function() {
   function renderSite(data) {
     data = $.xml2json(data);
     var posts = data.channel.item;
-   
-    renderLatestArticles(posts);
   }
 
   function renderLatestArticles(posts) {
