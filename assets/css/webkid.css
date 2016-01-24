@@ -353,6 +353,28 @@ a.article-link:visited {
   text-decoration: none;
 }
 
+ul.authors-thumbnails {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul.authors-thumbnails li {
+  float: left;
+}
+
+.authors-thumbnails .author-image {
+  display: inherit;
+  position: relative;
+  top: auto;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  padding: 3px;
+  box-shadow: none;
+  margin-left: 0;
+}
+
 /*Tablet*/
 @media (max-width: 1023px) {
   #sidebar, #articles, #article {

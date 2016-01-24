@@ -1,7 +1,21 @@
 <div class="box sidebox about">
   <div class="sidebox-title">About</div>
   <div class="sidebox-content">
-    <p>{{@blog.description}}</p>
+      <p>{{@blog.description}}</p>
+    <h6>Les auteurs</h6>
+      {{#get "users"  order="name asc"}}
+          <ul class="authors-thumbnails clearfix">
+            {{#foreach users}}
+                <li>
+                    <figure class="author-image">
+                        <a href="/author/{{slug}}">
+                          <span class="img" style="background-image: url({{image}})"><span class="hidden">{{name}}'s Picture</span></span>
+                        </a>
+                    </figure>
+                </li>
+            {{/foreach}}
+          </ul>
+      {{/get}}
   </div>
 </div>
 
