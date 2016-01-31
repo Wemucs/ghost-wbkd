@@ -74,6 +74,14 @@
             </footer>
         </article>
     </div>
+    {{#if tags}}
+    <div class="box">
+        <div class="post">
+            <h4>Des articles géniaux vous attendent dans les catégories liées :</h4>
+            <span>{{tags}}</span>
+        </div>
+    </div>
+    {{/if}}
     <div class="box">
         <div class="post">
             <div id="disqus_thread"></div>
