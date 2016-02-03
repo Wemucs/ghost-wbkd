@@ -384,7 +384,7 @@ ul.authors-thumbnails li {
 }
 
 @media (max-width: 480px) {
-  #taglist {
-    display: none;
+  #header {
+    margin-bottom: 0;
   }
 }
